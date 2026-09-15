@@ -4,6 +4,7 @@ const path = require('path');
 const root = __dirname;
 const phone = '0533 408 7596';
 const tel = 'tel:+905334087596';
+const email = 'bahadirhankarakoc163@icloud.com';
 const address = 'Avcılar Mahallesi, Fener Sokak No: 4, Edremit/Balıkesir';
 
 const variants = [
@@ -68,7 +69,7 @@ function shell(title, main, depth = 0, active = '') {
   <footer class="site-footer"><div class="container footer-grid">
     <div><h3>Karakoç Güneş Enerjisi Sistemleri ve Doğal Gaz</h3><p>Altınoluk ve Edremit'de güneş enerjisi, doğalgaz, su tesisatı, ısı pompası, kombi servis ve montaj.</p></div>
     <div><h4>Bağlantılar</h4><div class="footer-links"><a href="${up}urunler.html">Ürünler</a><a href="${up}referanslar.html">Referanslar</a><a href="${home}#kesif">Ücretsiz Keşif</a><a href="${home}#iletisim">İletişim</a></div></div>
-    <div><h4>İletişim</h4><p><a href="${tel}">Telefon: ${phone}</a><br><span>Adres: ${address}</span></p></div>
+    <div><h4>İletişim</h4><p><a href="${tel}">Telefon: ${phone}</a><br><span>Adres: ${address}</span><br><a class="footer-email" href="mailto:${email}">E-posta: ${email}</a></p></div>
   </div><div class="container footer-bottom">© 2026 Karakoç. Tüm hakları saklıdır.</div></footer>
   <script src="${up}assets/main.js"></script>
 </body></html>`;
@@ -87,7 +88,7 @@ function homePage() {
   const main = `<section class="hero">
     <img src="assets/karakoc-hero.png" alt="Çatıda güneş enerjisi sistemi ve montaj çalışması">
     <div class="hero-shade"></div>
-    <div class="container hero-content"><p class="eyebrow">ALTINOLUK'TA GÜNEŞ ENERJİSİ SİSTEMLERİ</p><h1>Karakoç Güneş Enerjisi Sistemleri</h1><p>Doğalgaz, su tesisatı, ısı pompası, kombi servis ve montaj. Eviniz ve iş yeriniz için keşiften kuruluma yanınızdayız.</p><div class="hero-actions"><a class="btn btn-primary" href="index.html#kesif">Ücretsiz Keşif <span aria-hidden="true">↗</span></a><a class="btn btn-light" href="urunler.html">Ürünleri İncele</a></div></div>
+    <div class="container hero-content"><p class="eyebrow">ALTINOLUK'TA GÜNEŞ ENERJİSİ SİSTEMLERİ</p><h1>Karakoç Güneş Enerjisi ve Doğalgaz Sistemleri</h1><p>Doğalgaz, su tesisatı, ısı pompası, kombi servis ve montaj. Eviniz ve iş yeriniz için keşiften kuruluma yanınızdayız.</p><div class="hero-actions"><a class="btn btn-primary" href="index.html#kesif">Ücretsiz Keşif <span aria-hidden="true">↗</span></a><a class="btn btn-light" href="urunler.html">Ürünleri İncele</a></div></div>
   </section>
   <div class="hero-under"><div class="container"><span>Altınoluk / Edremit</span><strong>Güneş enerjisi · Doğalgaz · Tesisat</strong><a href="${tel}">${phone} <span aria-hidden="true">↗</span></a></div></div>
   <section class="service-section" id="hizmetler"><div class="container"><div class="section-head"><div><p class="section-kicker">HİZMETLER</p><h2>Enerji ve tesisatta tek adres.</h2></div><p>Yerinde keşif, uygun ürün seçimi, temiz montaj ve servis desteği.</p></div><div class="service-grid"><article><span class="service-no">01</span><h3>Güneş Enerjisi Sistemleri</h3><p>Sıcak su ihtiyacınıza ve çatınıza uygun vakum tüplü sistemler.</p></article><article><span class="service-no">02</span><h3>Doğalgaz ve Su Tesisatı</h3><p>Ev, apartman ve iş yeri tesisatı için keşif ve uygulama.</p></article><article><span class="service-no">03</span><h3>Kombi ve Isı Pompası</h3><p>Kombi servis ve montajı ile ısı pompası kurulum desteği.</p></article></div></div></section>
